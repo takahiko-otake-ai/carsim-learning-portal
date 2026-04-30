@@ -36,28 +36,28 @@ features:
     linkText: サポートへ
 ---
 
-## あなたはどのタイプのユーザーですか？
+## 今日の目的は何ですか？
 
 <div class="journey-grid">
 
 <div class="journey-card new-user">
 
-### 🟢 はじめてのユーザー
+### 🟢 はじめて使う — Entry
 
-CarSim を初めて使う方向けのパスです。
+セットアップから最初のシミュレーションまで。
 
-<div class="journey-step"><a href="/carsim-learning-portal/getting-started/">Getting Started</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/getting-started/install">インストール</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/getting-started/license">ライセンス設定</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/getting-started/quick-start">クイックスタートガイド</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">初心者向け FAQ</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/learn/skill-map">スキルマップで確認</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">入門 FAQ</a></div>
 
 </div>
 
 <div class="journey-card stuck-user">
 
-### 🔵 困っているユーザー
+### 🔵 詰まったとき — 困ったら
 
-操作中に詰まったときのパスです。
+まず検索。解決しなければサポートへ。
 
 <div class="journey-step"><a href="/carsim-learning-portal/search">キーワード検索</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">FAQ で調べる</a></div>
@@ -68,9 +68,9 @@ CarSim を初めて使う方向けのパスです。
 
 <div class="journey-card grow-user">
 
-### 🟠 スキルアップしたいユーザー
+### 🟠 もっと使いこなす — Intermediate +
 
-もっと使いこなしたい方向けのパスです。
+スキルマップで現在地を確認し、次のステップへ。
 
 <div class="journey-step"><a href="/carsim-learning-portal/learn/skill-map">スキルマップで自己評価</a></div>
 <div class="journey-step">推奨ラーニングパス</div>
