@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: CarSim Learning Portal
-  text: CarSimを実務で活かす学習ポータル
+  text: CarSimを実務で活かす
   tagline: セットアップから応用モデル構築まで、段階的に学べます。
   actions:
     - theme: brand

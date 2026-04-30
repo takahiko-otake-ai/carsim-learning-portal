@@ -295,26 +295,18 @@
   flex-shrink: 0;
 }
 
-/* ── Hero text: prevent awkward mid-phrase line breaks ── */
-.VPHero .name {
-  /* Keep "CarSim Learning Portal" on fewer lines */
-  word-break: keep-all;
-  white-space: nowrap;
-}
+/* ── Hero text: prevent awkward line breaks ── */
+.VPHero .name,
 .VPHero .text,
 .VPHero .tagline {
-  /* Prevent breaks inside Japanese phrases (keep-all treats CJK as non-breaking) */
   word-break: keep-all;
   overflow-wrap: break-word;
+  /* strict prevents breaks before/after small kana etc. */
+  line-break: strict;
 }
-/* Slightly reduce hero text size so long Japanese fits without widowing */
-@media (max-width: 960px) {
-  .VPHero .text {
-    font-size: clamp(1.4rem, 5vw, 2.2rem) !important;
-  }
-  .VPHero .tagline {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem) !important;
-  }
+/* Cap hero text font size so short Japanese phrases don't wrap */
+.VPHero .text {
+  font-size: clamp(1.6rem, 4vw, 2.6rem) !important;
 }
 
 /* ── Language switcher: make button visible in dark nav ── */
