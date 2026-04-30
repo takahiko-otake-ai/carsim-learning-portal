@@ -1,148 +1,163 @@
-/* CarSim brand colors */
+/* =====================================================
+   CarSim Learning Portal — Light-only theme
+   Nav/Footer: #2d2d2d  |  Brand/Links: #1558d6
+   ===================================================== */
+
 :root {
-  --vp-c-brand-1: #0d9488;
-  --vp-c-brand-2: #0a7c70;
-  --vp-c-brand-3: #d1faf4;
-  --vp-c-brand-soft: rgba(13, 148, 136, 0.14);
+  --carsim-charcoal: #2d2d2d;
+  --carsim-blue: #1558d6;
+  --carsim-blue-dark: #0f3fa8;
+  --carsim-blue-light: #e8effe;
 
-  --carsim-navy: #1a365d;
-  --carsim-teal: #0d9488;
+  /* VitePress brand tokens */
+  --vp-c-brand-1: #1558d6;
+  --vp-c-brand-2: #0f3fa8;
+  --vp-c-brand-3: #e8effe;
+  --vp-c-brand-soft: rgba(21, 88, 214, 0.12);
 }
 
-/* Nav: navy background matching CarSim.com header */
-.VPNav {
-  background-color: var(--carsim-navy) !important;
+/* ── Navigation bar ── */
+.VPNav,
+.VPNavBar,
+.VPNavBar .container {
+  background-color: var(--carsim-charcoal) !important;
   border-bottom: none !important;
 }
 
-.VPNavBar {
-  background-color: var(--carsim-navy) !important;
-  border-bottom: none !important;
-}
-
+/* Nav text */
 .VPNavBar .title,
-.VPNavBar .VPNavBarTitle .title {
+.VPNavBarTitle .title {
   color: #fff !important;
   font-weight: 700;
-  font-size: 1rem;
 }
 
-.VPNavBar .VPNavBarMenu .VPNavBarMenuLink,
-.VPNavBar .VPNavBarMenu .VPNavBarMenuGroup .button {
-  color: #e2e8f0 !important;
+.VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBarMenu .VPNavBarMenuGroup .button {
+  color: #d4d4d4 !important;
   font-size: 0.9rem;
 }
 
-.VPNavBar .VPNavBarMenu .VPNavBarMenuLink:hover,
-.VPNavBar .VPNavBarMenu .VPNavBarMenuGroup .button:hover {
+.VPNavBarMenu .VPNavBarMenuLink:hover,
+.VPNavBarMenu .VPNavBarMenuGroup .button:hover,
+.VPNavBarMenu .VPNavBarMenuLink.active {
   color: #fff !important;
 }
 
-/* Mobile hamburger icon in nav */
+/* Language picker & social icons in nav */
+.VPNavBarExtra .label,
+.VPNavBarAppearance .label,
+.VPSocialLink {
+  color: #d4d4d4 !important;
+}
+
+/* Mobile hamburger */
 .VPNavBarHamburger .top,
 .VPNavBarHamburger .middle,
 .VPNavBarHamburger .bottom {
   background-color: #fff !important;
 }
 
-/* Nav search button */
+/* Search button in nav */
 .VPNavBarSearch .DocSearch-Button {
-  background-color: rgba(255,255,255,0.1) !important;
-  color: #e2e8f0 !important;
-  border: 1px solid rgba(255,255,255,0.2) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #d4d4d4 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px !important;
 }
-
 .VPNavBarSearch .DocSearch-Button:hover {
-  background-color: rgba(255,255,255,0.2) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.VPNavBarSearch .DocSearch-Button-Placeholder {
+  color: #d4d4d4 !important;
 }
 
-/* Dark mode nav stays navy */
-.dark .VPNav,
-.dark .VPNavBar {
-  background-color: #0f2340 !important;
+/* ── Footer ── */
+.VPFooter {
+  background-color: var(--carsim-charcoal) !important;
+  border-top: none !important;
+  color: #a0a0a0 !important;
+  font-size: 0.85rem;
+}
+.VPFooter .message,
+.VPFooter .copyright {
+  color: #a0a0a0 !important;
 }
 
-/* Sidebar heading accent line (like CarSim sidebar) */
-.VPSidebar .title {
-  border-left: 3px solid var(--carsim-teal);
-  padding-left: 0.6rem;
-  font-weight: 700;
-  color: var(--carsim-navy);
-}
-
-.dark .VPSidebar .title {
-  color: #93c5fd;
-}
-
-/* Link color */
+/* ── Links ── */
 .vp-doc a {
-  color: var(--carsim-teal);
+  color: var(--carsim-blue);
   text-decoration: none;
 }
-
 .vp-doc a:hover {
+  color: var(--carsim-blue-dark);
   text-decoration: underline;
-  color: var(--carsim-navy);
 }
 
-/* Heading style: bold, dark navy */
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3 {
-  color: var(--carsim-navy);
+/* ── Headings ── */
+.vp-doc h1 {
+  color: #1a1a1a;
   font-weight: 700;
 }
-
-.dark .vp-doc h1,
-.dark .vp-doc h2,
-.dark .vp-doc h3 {
-  color: #93c5fd;
-}
-
-/* h2 underline accent */
 .vp-doc h2 {
-  border-bottom: 2px solid var(--carsim-teal);
+  color: #1a1a1a;
+  font-weight: 700;
+  border-bottom: 2px solid var(--carsim-blue);
   padding-bottom: 0.3rem;
 }
+.vp-doc h3 {
+  color: #1a1a1a;
+  font-weight: 600;
+}
 
-/* Feature cards on home */
+/* ── Sidebar ── */
+.VPSidebar {
+  background-color: #f8f9fa !important;
+}
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 700;
+  color: #1a1a1a;
+  border-left: 3px solid var(--carsim-blue);
+  padding-left: 0.5rem;
+}
+.VPSidebarItem .link:hover .text {
+  color: var(--carsim-blue) !important;
+}
+.VPSidebarItem.is-active > .item > .link .text {
+  color: var(--carsim-blue) !important;
+}
+
+/* ── Buttons (hero / CTA) ── */
+.VPButton.brand {
+  background-color: var(--carsim-blue) !important;
+  border-color: var(--carsim-blue) !important;
+  color: #fff !important;
+}
+.VPButton.brand:hover {
+  background-color: var(--carsim-blue-dark) !important;
+  border-color: var(--carsim-blue-dark) !important;
+}
+.VPButton.alt {
+  border-color: var(--carsim-blue) !important;
+  color: var(--carsim-blue) !important;
+}
+.VPButton.alt:hover {
+  background-color: var(--carsim-blue-light) !important;
+}
+
+/* ── Feature cards (home) ── */
 .VPFeature {
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e2e6ea !important;
   border-radius: 8px !important;
   transition: box-shadow 0.2s, border-color 0.2s;
 }
-
 .VPFeature:hover {
-  border-color: var(--carsim-teal) !important;
-  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.15) !important;
+  border-color: var(--carsim-blue) !important;
+  box-shadow: 0 4px 16px rgba(21, 88, 214, 0.12) !important;
 }
 
-/* Hero button */
-.VPButton.brand {
-  background-color: var(--carsim-teal) !important;
-  border-color: var(--carsim-teal) !important;
-}
-
-.VPButton.brand:hover {
-  background-color: var(--carsim-navy) !important;
-  border-color: var(--carsim-navy) !important;
-}
-
-/* Footer */
-.VPFooter {
-  border-top: 1px solid #e2e8f0;
-  background-color: #f8fafc;
-  color: #64748b;
-  font-size: 0.85rem;
-}
-
-.dark .VPFooter {
-  background-color: #0f172a;
-  border-top-color: #1e293b;
-}
-
-/* Japanese font */
+/* ── Font ── */
 body {
   font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
     "Yu Gothic", "Meiryo", system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
 }

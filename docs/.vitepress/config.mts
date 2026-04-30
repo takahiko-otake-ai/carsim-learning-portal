@@ -50,6 +50,7 @@ export default defineConfig({
   base: '/carsim-learning-portal/',
   title: 'CarSim Learning Portal',
   description: 'CarSim learning resources for users in Japan',
+  appearance: false,
 
   locales: {
     root: {
