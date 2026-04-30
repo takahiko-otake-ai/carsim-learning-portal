@@ -6,6 +6,7 @@ const jaNav = [
   { text: 'ナレッジベース', link: '/kb/faq/' },
   { text: 'ラーニング', link: '/learn/skill-map' },
   { text: 'サポート', link: '/support/' },
+  { text: 'CarSim.com ↗', link: 'https://www.carsim.com/', target: '_blank', rel: 'noopener' },
 ]
 
 const enNav = [
@@ -14,6 +15,7 @@ const enNav = [
   { text: 'Knowledge Base', link: '/en/kb/faq/' },
   { text: 'Learning', link: '/en/learn/skill-map' },
   { text: 'Support', link: '/en/support/' },
+  { text: 'CarSim.com ↗', link: 'https://www.carsim.com/', target: '_blank', rel: 'noopener' },
 ]
 
 const jaSidebar = {
@@ -25,7 +27,8 @@ const jaSidebar = {
         { text: 'インストール', link: '/getting-started/install' },
         { text: 'ライセンス設定', link: '/getting-started/license' },
         { text: 'クイックスタート', link: '/getting-started/quick-start' },
-        { text: 'トレーニング準備', link: '/getting-started/training-prep' },
+        // トレーニング準備はステップからは除外。申し込み者向けに概要ページからリンク
+        { text: 'トレーニング準備（申込者向け）', link: '/getting-started/training-prep' },
       ],
     },
   ],
@@ -40,7 +43,6 @@ const enSidebar = {
         { text: 'Install', link: '/en/getting-started/install' },
         { text: 'License Setup', link: '/en/getting-started/license' },
         { text: 'Quick Start', link: '/en/getting-started/quick-start' },
-        { text: 'Training Prep', link: '/en/getting-started/training-prep' },
       ],
     },
   ],
