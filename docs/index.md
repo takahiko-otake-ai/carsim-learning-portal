@@ -3,37 +3,37 @@ layout: home
 
 hero:
   name: CarSim Learning Portal
-  text: CarSim を使いこなすための学習ハブ
-  tagline: インストールから高度なモデリングまで、ステップごとにサポート
+  text: CarSimを実務で活用するための学習ポータル
+  tagline: セットアップからシミュレーション実行、応用的なモデル構築まで、段階的に学べます。
   actions:
     - theme: brand
-      text: はじめる
+      text: 学習を始める
       link: /getting-started/
     - theme: alt
-      text: FAQ を見る
+      text: 困ったときはこちら
       link: /kb/faq/
 
 features:
   - icon: 🚀
-    title: Getting Started
-    details: インストール・ライセンス設定・クイックスタートまで、順を追って解説します。
+    title: はじめてのCarSim
+    details: 初期設定から最初のシミュレーション実行まで、基本の流れを確認できます。
     link: /getting-started/
-    linkText: 開始する
+    linkText: 学習を始める
   - icon: 📚
-    title: Knowledge Base / FAQ
-    details: よくある質問やトラブルシューティングをカテゴリ別に整理しています。
+    title: ナレッジベース
+    details: よくある質問や操作手順を、カテゴリ別に確認できます。
     link: /kb/faq/
-    linkText: FAQ を見る
+    linkText: ナレッジを見る
   - icon: 🎯
-    title: Skill Map
-    details: 自己評価チャートで、学習の現在地と次のステップを確認できます。
+    title: スキルマップ
+    details: 現在の理解度を確認し、次に学ぶべき内容を把握できます。
     link: /learn/skill-map
-    linkText: スキルを確認する
+    linkText: スキルマップを見る
   - icon: 🛟
-    title: Support
-    details: 問題が解決しない場合は、サポートへの連絡方法をご案内します。
+    title: サポート
+    details: 問題が解決しない場合の問い合わせ先や、サポート利用の流れを確認できます。
     link: /support/
-    linkText: サポートへ
+    linkText: サポートを見る
 ---
 
 ## 今日は何を学びますか？
