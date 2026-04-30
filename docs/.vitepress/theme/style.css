@@ -323,29 +323,27 @@
   background-color: rgba(255, 255, 255, 0.15) !important;
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
-/* Dropdown flyout panel — override CSS variables so scoped component styles pick up correct colors */
+/* Dropdown flyout panel */
 .VPFlyout .menu {
-  /* Re-define variables in this scope: VPMenuLink uses var(--vp-c-text-1) etc. */
-  --vp-c-text-1: #1a1a1a;
-  --vp-c-text-2: #374151;
-  --vp-c-bg-elv: #ffffff;
-  --vp-c-default-soft: #e8effe;
-  --vp-c-brand-1: #1558d6;
-
   background-color: #fff !important;
   border: 1px solid #d1d5db !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14) !important;
   border-radius: 6px !important;
 }
-/* Belt-and-suspenders: also set color directly on the anchor elements */
-.VPMenuLink .VPLink {
+
+/*
+ * VPMenuLink uses scoped CSS (.link[data-v-35975db6]) with color: var(--vp-c-text-1).
+ * In dev mode Vue injects scoped styles via JS after static CSS loads, so variable
+ * overrides on parent selectors don't reliably cascade. Target the scoped hash directly.
+ */
+[data-v-35975db6].link {
   color: #1a1a1a !important;
 }
-.VPMenuLink .VPLink:hover {
+[data-v-35975db6].link:hover {
   color: #1558d6 !important;
   background-color: #e8effe !important;
 }
-.VPMenuLink .VPLink.active {
+[data-v-35975db6].link.active {
   color: #1558d6 !important;
   font-weight: 700 !important;
   background-color: #e8effe !important;
