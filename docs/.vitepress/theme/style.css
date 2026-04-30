@@ -14,40 +14,83 @@
   --vp-c-brand-2: #0f3fa8;
   --vp-c-brand-3: #e8effe;
   --vp-c-brand-soft: rgba(21, 88, 214, 0.12);
+
+  /* Override VitePress nav background variable (covers all pages/scroll states) */
+  --vp-nav-bg-color: #2d2d2d;
+
+  /* Custom block (info/tip/warning) — high-contrast */
+  --vp-custom-block-info-border: #1558d6;
+  --vp-custom-block-info-text: #1a1a1a;
+  --vp-custom-block-info-bg: #e8effe;
+  --vp-custom-block-info-code-bg: #d0dffb;
+
+  --vp-custom-block-tip-border: #0a8f5c;
+  --vp-custom-block-tip-text: #1a1a1a;
+  --vp-custom-block-tip-bg: #e6f7ef;
+
+  --vp-custom-block-warning-border: #b45309;
+  --vp-custom-block-warning-text: #1a1a1a;
+  --vp-custom-block-warning-bg: #fef3c7;
+
+  --vp-custom-block-danger-border: #b91c1c;
+  --vp-custom-block-danger-text: #1a1a1a;
+  --vp-custom-block-danger-bg: #fee2e2;
 }
 
-/* ── Navigation bar ── */
+/* ── Navigation bar (all pages + scroll state) ── */
 .VPNav,
 .VPNavBar,
-.VPNavBar .container {
-  background-color: var(--carsim-charcoal) !important;
+.VPNavBar .container,
+.VPNavBar .content,
+.VPNavBar .content-body,
+.VPNavBar .curtain {
+  background-color: #2d2d2d !important;
   border-bottom: none !important;
 }
 
-/* Nav text */
+/* Blur backdrop that VitePress adds on scroll */
+.VPNavBar.has-sidebar .content,
+.VPNavBar.fill .content,
+.VPNavBar.has-sidebar .content-body {
+  background-color: #2d2d2d !important;
+}
+
+/* Nav site title */
 .VPNavBar .title,
 .VPNavBarTitle .title {
   color: #fff !important;
   font-weight: 700;
 }
 
+/* Nav links */
 .VPNavBarMenu .VPNavBarMenuLink,
 .VPNavBarMenu .VPNavBarMenuGroup .button {
   color: #d4d4d4 !important;
   font-size: 0.9rem;
 }
-
 .VPNavBarMenu .VPNavBarMenuLink:hover,
-.VPNavBarMenu .VPNavBarMenuGroup .button:hover,
-.VPNavBarMenu .VPNavBarMenuLink.active {
+.VPNavBarMenu .VPNavBarMenuGroup .button:hover {
   color: #fff !important;
 }
+.VPNavBarMenu .VPNavBarMenuLink.active {
+  color: #fff !important;
+  border-bottom: 2px solid var(--carsim-blue);
+}
 
-/* Language picker & social icons in nav */
-.VPNavBarExtra .label,
-.VPNavBarAppearance .label,
-.VPSocialLink {
+/* Language switcher & social icon */
+.VPNavBarTranslations .label,
+.VPNavBarAppearance .label {
   color: #d4d4d4 !important;
+}
+.VPNavBarTranslations button,
+.VPNavBarTranslations span {
+  color: #d4d4d4 !important;
+}
+.VPSocialLink svg {
+  fill: #d4d4d4 !important;
+}
+.VPSocialLink:hover svg {
+  fill: #fff !important;
 }
 
 /* Mobile hamburger */
@@ -57,30 +100,47 @@
   background-color: #fff !important;
 }
 
-/* Search button in nav */
+/* Search button */
 .VPNavBarSearch .DocSearch-Button {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: #d4d4d4 !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 4px !important;
 }
 .VPNavBarSearch .DocSearch-Button:hover {
   background-color: rgba(255, 255, 255, 0.2) !important;
 }
-.VPNavBarSearch .DocSearch-Button-Placeholder {
+.VPNavBarSearch .DocSearch-Button-Placeholder,
+.VPNavBarSearch .DocSearch-Button-Key {
   color: #d4d4d4 !important;
 }
 
 /* ── Footer ── */
 .VPFooter {
-  background-color: var(--carsim-charcoal) !important;
+  background-color: #2d2d2d !important;
   border-top: none !important;
-  color: #a0a0a0 !important;
-  font-size: 0.85rem;
 }
 .VPFooter .message,
 .VPFooter .copyright {
   color: #a0a0a0 !important;
+  font-size: 0.85rem;
+}
+
+/* ── Doc page "Previous / Next" navigation ── */
+.VPDocFooter .pager-link .desc {
+  color: #6b7280 !important;
+  font-size: 0.8rem;
+}
+.VPDocFooter .pager-link .title {
+  color: var(--carsim-blue) !important;
+  font-weight: 600;
+}
+.VPDocFooter .pager-link {
+  border: 1px solid #e2e6ea !important;
+}
+.VPDocFooter .pager-link:hover {
+  border-color: var(--carsim-blue) !important;
+  background-color: var(--carsim-blue-light) !important;
 }
 
 /* ── Links ── */
@@ -109,9 +169,26 @@
   font-weight: 600;
 }
 
+/* ── Custom blocks (info / tip / warning / danger) ── */
+.custom-block {
+  border-radius: 6px;
+}
+.custom-block.info .custom-block-title,
+.custom-block.tip .custom-block-title,
+.custom-block.warning .custom-block-title,
+.custom-block.danger .custom-block-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.custom-block.info .custom-block-title { color: var(--carsim-blue); }
+.custom-block.tip .custom-block-title { color: #0a8f5c; }
+.custom-block.warning .custom-block-title { color: #b45309; }
+.custom-block.danger .custom-block-title { color: #b91c1c; }
+
 /* ── Sidebar ── */
 .VPSidebar {
   background-color: #f8f9fa !important;
+  border-right: 1px solid #e2e6ea;
 }
 .VPSidebarItem.level-0 > .item > .text {
   font-weight: 700;
@@ -119,10 +196,23 @@
   border-left: 3px solid var(--carsim-blue);
   padding-left: 0.5rem;
 }
+.VPSidebarItem .link .text {
+  color: #374151 !important;
+}
 .VPSidebarItem .link:hover .text {
   color: var(--carsim-blue) !important;
 }
 .VPSidebarItem.is-active > .item > .link .text {
+  color: var(--carsim-blue) !important;
+  font-weight: 600;
+}
+
+/* ── Table of contents (right sidebar) ── */
+.VPDocAsideOutline .outline-link {
+  color: #6b7280 !important;
+}
+.VPDocAsideOutline .outline-link:hover,
+.VPDocAsideOutline .outline-link.active {
   color: var(--carsim-blue) !important;
 }
 
@@ -139,6 +229,7 @@
 .VPButton.alt {
   border-color: var(--carsim-blue) !important;
   color: var(--carsim-blue) !important;
+  background-color: transparent !important;
 }
 .VPButton.alt:hover {
   background-color: var(--carsim-blue-light) !important;
@@ -153,6 +244,55 @@
 .VPFeature:hover {
   border-color: var(--carsim-blue) !important;
   box-shadow: 0 4px 16px rgba(21, 88, 214, 0.12) !important;
+}
+.VPFeature .title {
+  color: #1a1a1a !important;
+  font-weight: 700;
+}
+.VPFeature .details {
+  color: #4b5563 !important;
+}
+
+/* ── User journey cards (home page custom section) ── */
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+@media (max-width: 768px) {
+  .journey-grid { grid-template-columns: 1fr; }
+}
+.journey-card {
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.journey-card.new-user   { background: #e8f5ee; border: 2px solid #0a8f5c; }
+.journey-card.stuck-user { background: #ede9fe; border: 2px solid #6d28d9; }
+.journey-card.grow-user  { background: #fff3e0; border: 2px solid #c2690a; }
+.journey-card h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.1rem !important;
+  border: none !important;
+}
+.journey-card.new-user   h3 { color: #0a5c3a !important; }
+.journey-card.stuck-user h3 { color: #4c1d95 !important; }
+.journey-card.grow-user  h3 { color: #7c3a00 !important; }
+.journey-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+.journey-step::before {
+  content: '→';
+  color: #9ca3af;
+  flex-shrink: 0;
 }
 
 /* ── Font ── */

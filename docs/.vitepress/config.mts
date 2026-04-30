@@ -59,6 +59,18 @@ export default defineConfig({
       themeConfig: {
         nav: jaNav,
         sidebar: jaSidebar,
+        docFooter: {
+          prev: '前のページ',
+          next: '次のページ',
+        },
+        outline: {
+          label: 'このページの内容',
+        },
+        lastUpdated: {
+          text: '最終更新',
+        },
+        returnToTopLabel: 'トップへ戻る',
+        sidebarMenuLabel: 'メニュー',
       },
     },
     en: {
@@ -68,6 +80,10 @@ export default defineConfig({
       themeConfig: {
         nav: enNav,
         sidebar: enSidebar,
+        docFooter: {
+          prev: 'Previous page',
+          next: 'Next page',
+        },
       },
     },
     // ko: {
