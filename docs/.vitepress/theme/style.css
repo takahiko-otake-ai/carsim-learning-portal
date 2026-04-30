@@ -295,6 +295,59 @@
   flex-shrink: 0;
 }
 
+/* ── Hero text: prevent awkward mid-phrase line breaks ── */
+.VPHero .name {
+  /* Keep "CarSim Learning Portal" on fewer lines */
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.VPHero .text,
+.VPHero .tagline {
+  /* Prevent breaks inside Japanese phrases (keep-all treats CJK as non-breaking) */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+/* Slightly reduce hero text size so long Japanese fits without widowing */
+@media (max-width: 960px) {
+  .VPHero .text {
+    font-size: clamp(1.4rem, 5vw, 2.2rem) !important;
+  }
+  .VPHero .tagline {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem) !important;
+  }
+}
+
+/* ── Language switcher: make button visible in dark nav ── */
+.VPNavBarTranslations .btn,
+.VPNavBarTranslations button {
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+  font-size: 0.8rem !important;
+}
+.VPNavBarTranslations .btn:hover,
+.VPNavBarTranslations button:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+/* Dropdown flyout panel */
+.VPFlyout .menu {
+  background-color: #fff !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 6px !important;
+}
+.VPFlyout .item .link,
+.VPFlyout .item .option {
+  color: #1a1a1a !important;
+}
+.VPFlyout .item .link:hover,
+.VPFlyout .item .option:hover {
+  color: var(--carsim-blue) !important;
+  background-color: var(--carsim-blue-light) !important;
+}
+
 /* ── Font ── */
 body {
   font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
