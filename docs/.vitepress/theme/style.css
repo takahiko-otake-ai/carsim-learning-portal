@@ -1,0 +1,148 @@
+/* CarSim brand colors */
+:root {
+  --vp-c-brand-1: #0d9488;
+  --vp-c-brand-2: #0a7c70;
+  --vp-c-brand-3: #d1faf4;
+  --vp-c-brand-soft: rgba(13, 148, 136, 0.14);
+
+  --carsim-navy: #1a365d;
+  --carsim-teal: #0d9488;
+}
+
+/* Nav: navy background matching CarSim.com header */
+.VPNav {
+  background-color: var(--carsim-navy) !important;
+  border-bottom: none !important;
+}
+
+.VPNavBar {
+  background-color: var(--carsim-navy) !important;
+  border-bottom: none !important;
+}
+
+.VPNavBar .title,
+.VPNavBar .VPNavBarTitle .title {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink,
+.VPNavBar .VPNavBarMenu .VPNavBarMenuGroup .button {
+  color: #e2e8f0 !important;
+  font-size: 0.9rem;
+}
+
+.VPNavBar .VPNavBarMenu .VPNavBarMenuLink:hover,
+.VPNavBar .VPNavBarMenu .VPNavBarMenuGroup .button:hover {
+  color: #fff !important;
+}
+
+/* Mobile hamburger icon in nav */
+.VPNavBarHamburger .top,
+.VPNavBarHamburger .middle,
+.VPNavBarHamburger .bottom {
+  background-color: #fff !important;
+}
+
+/* Nav search button */
+.VPNavBarSearch .DocSearch-Button {
+  background-color: rgba(255,255,255,0.1) !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  background-color: rgba(255,255,255,0.2) !important;
+}
+
+/* Dark mode nav stays navy */
+.dark .VPNav,
+.dark .VPNavBar {
+  background-color: #0f2340 !important;
+}
+
+/* Sidebar heading accent line (like CarSim sidebar) */
+.VPSidebar .title {
+  border-left: 3px solid var(--carsim-teal);
+  padding-left: 0.6rem;
+  font-weight: 700;
+  color: var(--carsim-navy);
+}
+
+.dark .VPSidebar .title {
+  color: #93c5fd;
+}
+
+/* Link color */
+.vp-doc a {
+  color: var(--carsim-teal);
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+  color: var(--carsim-navy);
+}
+
+/* Heading style: bold, dark navy */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  color: var(--carsim-navy);
+  font-weight: 700;
+}
+
+.dark .vp-doc h1,
+.dark .vp-doc h2,
+.dark .vp-doc h3 {
+  color: #93c5fd;
+}
+
+/* h2 underline accent */
+.vp-doc h2 {
+  border-bottom: 2px solid var(--carsim-teal);
+  padding-bottom: 0.3rem;
+}
+
+/* Feature cards on home */
+.VPFeature {
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.VPFeature:hover {
+  border-color: var(--carsim-teal) !important;
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.15) !important;
+}
+
+/* Hero button */
+.VPButton.brand {
+  background-color: var(--carsim-teal) !important;
+  border-color: var(--carsim-teal) !important;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--carsim-navy) !important;
+  border-color: var(--carsim-navy) !important;
+}
+
+/* Footer */
+.VPFooter {
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.dark .VPFooter {
+  background-color: #0f172a;
+  border-top-color: #1e293b;
+}
+
+/* Japanese font */
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", "Meiryo", system-ui, -apple-system, sans-serif;
+}
