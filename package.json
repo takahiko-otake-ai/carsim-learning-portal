@@ -1,0 +1,26 @@
+{
+  "name": "carsim-learning-portal",
+  "version": "1.0.0",
+  "description": "CarSim Learing Portal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takahiko-otake-ai/carsim-learning-portal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/takahiko-otake-ai/carsim-learning-portal/issues"
+  },
+  "homepage": "https://github.com/takahiko-otake-ai/carsim-learning-portal#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
