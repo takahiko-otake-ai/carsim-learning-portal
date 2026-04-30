@@ -36,45 +36,45 @@ features:
     linkText: サポートへ
 ---
 
-## 今日の目的は何ですか？
+## 今日は何を学びますか？
 
 <div class="journey-grid">
 
 <div class="journey-card new-user">
 
-### 🟢 はじめて使う — Entry
+### 🟢 初めての方へ — Entry
 
-セットアップから最初のシミュレーションまで。
+インストールから基本操作、最初のシミュレーション実行までを学びます。
 
-<div class="journey-step"><a href="/carsim-learning-portal/getting-started/install">インストール</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/getting-started/install">インストール手順</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/getting-started/license">ライセンス設定</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/getting-started/quick-start">クイックスタートガイド</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">入門 FAQ</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/getting-started/quick-start">クイックスタート</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">よくある質問</a></div>
 
 </div>
 
 <div class="journey-card stuck-user">
 
-### 🔵 詰まったとき — 困ったら
+### 🔵 困ったときは — Support
 
-まず検索。解決しなければサポートへ。
+エラーや操作上の疑問を解決するための情報を探せます。解決しない場合はサポートにお問い合わせください。
 
-<div class="journey-step"><a href="/carsim-learning-portal/search">キーワード検索</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">FAQ で調べる</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/search">キーワードで検索</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">FAQ を見る</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/kb/troubleshoot">トラブルシューティング</a></div>
-<div class="journey-step"><a href="/carsim-learning-portal/support/">解決しない → サポートへ</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/support/">サポートに問い合わせる</a></div>
 
 </div>
 
 <div class="journey-card grow-user">
 
-### 🟠 もっと使いこなす — Intermediate +
+### 🟠 スキルアップ — Intermediate
 
-スキルマップで現在地を確認し、次のステップへ。
+現在の理解度を確認し、目的に合わせて次の学習ステップへ進みましょう。
 
-<div class="journey-step"><a href="/carsim-learning-portal/learn/skill-map">スキルマップで自己評価</a></div>
-<div class="journey-step">推奨ラーニングパス</div>
-<div class="journey-step">トレーニング / コース</div>
+<div class="journey-step"><a href="/carsim-learning-portal/learn/skill-map">スキルマップで確認</a></div>
+<div class="journey-step">おすすめ学習パス</div>
+<div class="journey-step">トレーニングコース</div>
 <div class="journey-step">認定・修了証</div>
 
 </div>
