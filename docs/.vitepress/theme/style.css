@@ -327,17 +327,36 @@
 .VPFlyout .menu {
   background-color: #fff !important;
   border: 1px solid #d1d5db !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14) !important;
   border-radius: 6px !important;
 }
+/* All flyout items: dark readable text */
+.VPFlyout .item,
 .VPFlyout .item .link,
-.VPFlyout .item .option {
+.VPFlyout .item .option,
+.VPFlyout .item a,
+.VPFlyout .item span,
+.VPFlyout .item .title,
+.VPFlyout .item .text {
   color: #1a1a1a !important;
+  font-weight: 500;
 }
+/* Hover state */
 .VPFlyout .item .link:hover,
-.VPFlyout .item .option:hover {
+.VPFlyout .item .option:hover,
+.VPFlyout .item a:hover {
   color: var(--carsim-blue) !important;
   background-color: var(--carsim-blue-light) !important;
+  border-radius: 4px;
+}
+/* Active / current locale item */
+.VPFlyout .item .link.active,
+.VPFlyout .item .option.active,
+.VPFlyout .item a.active {
+  color: var(--carsim-blue) !important;
+  font-weight: 700 !important;
+  background-color: var(--carsim-blue-light) !important;
+  border-radius: 4px;
 }
 
 /* ── Font ── */
