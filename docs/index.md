@@ -59,7 +59,7 @@ features:
 
 エラーや操作上の疑問を解決するための情報を探せます。解決しない場合はサポートにお問い合わせください。
 
-<div class="journey-step"><a href="/carsim-learning-portal/search">キーワードで検索</a></div>
+<div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">キーワードで検索</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/kb/faq/">FAQ を見る</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/kb/troubleshoot">トラブルシューティング</a></div>
 <div class="journey-step"><a href="/carsim-learning-portal/support/">サポートに問い合わせる</a></div>

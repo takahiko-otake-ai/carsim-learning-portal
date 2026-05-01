@@ -54,6 +54,10 @@ export default defineConfig({
   description: 'CarSim learning resources for users in Japan',
   appearance: false,
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/carsim-learning-portal/favicon.png' }],
+  ],
+
   locales: {
     root: {
       label: '日本語',
