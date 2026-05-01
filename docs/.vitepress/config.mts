@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const jaNav = [
   { text: 'ホーム', link: '/' },
-  { text: 'はじめる', link: '/getting-started/' },
+  { text: 'はじめに', link: '/getting-started/' },
   { text: 'ナレッジベース', link: '/kb/faq/' },
   { text: 'ラーニング', link: '/learn/skill-map' },
   { text: 'サポート', link: '/support/' },
@@ -21,7 +21,7 @@ const enNav = [
 const jaSidebar = {
   '/getting-started/': [
     {
-      text: 'はじめる',
+      text: 'はじめに',
       items: [
         { text: '概要', link: '/getting-started/' },
         { text: 'インストール', link: '/getting-started/install' },
