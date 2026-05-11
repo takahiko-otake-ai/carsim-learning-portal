@@ -1,5 +1,5 @@
 # Skill Map
 
-::: info Content coming soon
-English content is being prepared.
+::: info Coming soon
+A self-assessment radar chart and learning path guide will be added here.
 :::

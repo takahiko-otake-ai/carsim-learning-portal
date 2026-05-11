@@ -1,5 +1,5 @@
 # FAQ
 
-::: info Content coming soon
-English content is being prepared.
+::: info Coming soon
+Frequently asked questions will be added by category.
 :::

@@ -43,6 +43,7 @@ const enSidebar = {
         { text: 'Install', link: '/en/getting-started/install' },
         { text: 'License Setup', link: '/en/getting-started/license' },
         { text: 'Quick Start', link: '/en/getting-started/quick-start' },
+        { text: 'Training Preparation (Registered)', link: '/en/getting-started/training-prep' },
       ],
     },
   ],
